@@ -1,0 +1,119 @@
+/* start slider */
+
+.slider{
+    text-align: center;
+    h1{
+        text-align: center;
+        background-color: $redColor;
+        color: #fff;
+        margin: 5px auto;
+        border-radius: 15px;
+        width: 400px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+    }
+    blockquote{
+        font : {
+            size: 20px;
+            style: italic;
+            family: Tahoma , arial;
+            weight:bold;
+        }
+    line-height: 1.7;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 10px auto;
+    }
+    img{
+    max-width: 100%;
+    }
+    .bullets 
+    li{
+display: inline-block;
+width: 20px; 
+height: 20px;
+background-color: $greyColor;
+border-radius: 50%;
+border: 3px solid $greyColor;
+cursor: progress;
+    &.active
+    ,&:hover{
+        background-color: #FFF;
+    border: 3px solid #333;
+    }
+}
+}
+
+.services{
+    
+    .service-box{
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+        @media #{$minMedium} {
+            float: $float-left;
+            width: (100% / 3);
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }
+            }
+        .service-title{
+        color: #666;
+        }
+        span{
+            color: black;
+        }
+        .service-desc {
+        color: #777;
+        line-height: 1.6;
+    }
+        .link{
+        color: $redColor;
+        }
+    }
+}
+
+.our-players{
+    .player-box{
+        @media #{$minSmall} {
+        float: $float-left;
+        width: (100% / 2);
+        text-align: center;
+        margin-bottom: 40px;
+        }
+        @media #{$minMedium} {
+            width: (100% / 3);
+            text-align: $text-left;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+        @media #{$minLarge} {
+            width: (100% / 5);
+            }
+            @media #{$maxMobile} {
+                margin-bottom: 40px;
+                }
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+        .player-title{
+        color: #666;
+        }
+        .player-desc {
+        color: #777;
+        line-height: 1.6;
+    }
+        .link{
+        color: $redColor;
+        }
+    }
+}
+
+.codes{
+    .photo-box{
+        img{
+            width: 100%;
+        }
+    }
+}

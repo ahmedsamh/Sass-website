@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/homepage.css"/>
+    <!--improtant meta to view responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <title>Sass practical</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="Ar"><a href="index-rtl.html">AR</a></div>
+            <div class="logo">
+                <h1>Sass</h1>
+                <p>Free Sass Website</p>
+                <button class="the-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            </div>
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#install">Installation</a> </li>
+                <li><a href="#tutorial">TUTORIAL</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider" id="about">
+        <div class="container">
+            <div class="head-width-border">
+                <h2>Sass About</h2>
+            </div>
+            <blockquote>"Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax."</blockquote>
+            <img src="imgs/SASS-StyleSheet.jpg" alt="">
+            <ul class="bullets">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="services" id="install">
+        <div class="container">
+            <div class="head-width-border">
+                <h2>Sass Installation</h2>
+            </div>
+            <div class="service-box text-center-xs">
+                <h3 class="service-title">System Requirements for Sass</h3>
+                <p class="service-desc">
+                    <ul>
+                        <li  class="service-desc"><span>- Operating system</span> - Sass is platform independent</li>
+                        <li  class="service-desc"><span>- Browser support </span>- Sass works in Edge/IE (from IE 8), Firefox, Chrome, Safari, Opera
+                        </li >
+                        <li  class="service-desc"><span>- Programming language</span> - Sass is based on Ruby</li>
+                    </ul>
+                </p>
+                <a class="link" href="https://www.w3schools.com/sass/sass_installation.php">Read More...</a>
+            </div>
+            <div class="service-box text-center-xs">
+                <h3 class="service-title">Official Sass Web Site</h3>
+                <p class="service-desc">Read more about Sass at the official Sass web site:</p>
+                <a class="link" href="https://sass-lang.com/">Read More...</a>
+            </div>
+            <div class="service-box text-center-xs">
+                <h3 class="service-title">Install Sass</h3>
+                <p class="service-desc">There are several ways to install Sass in your system. There are many applications that will get you up and running with Sass in a few minutes for Mac, Windows, and Linux. Some of these are free, but some are paid apps.</p>
+                <p  class="service-desc">You can read more about them here:</p>
+                <a class="link" href="https://sass-lang.com/install">Read More...</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="our-players" id="tutorial">
+        <div class="container">
+            <div class="head-width-border">
+                <h2>Sass Tutorial</h2>
+            </div>
+            <div class="player-box text-center-xs">
+                <h3 class="player-title">Sass Variables</h3>
+                <p class="player-desc">Variables are a way to store information that you can re-use later.</p>
+                <p class="player-desc">With Sass, you can store information in variables, like:
+                </p>
+                <p class="player-desc">
+                    <ul>
+                        <li  class="player-desc">strings</li>
+                        <li  class="player-desc">numbers</li>
+                        <li  class="player-desc">colors</li>
+                        <li  class="player-desc">booleans</li>
+                        <li  class="player-desc">lists</li>
+                        <li  class="player-desc">nulls</li>
+                    </ul>
+                </p>
+                <p class="player-desc">Sass uses the $ symbol, followed by a name, to declare variables:</p>
+                <a class="link" href="https://www.w3schools.com/sass/sass_variables.php">Read More...</a>
+            </div>
+            <div class="player-box text-center-xs">
+                <h3 class="player-title">Sass Nested Rules and Properties</h3>
+                <p class="player-desc">Sass lets you nest CSS selectors in the same way as HTML.</p>
+                <p class="player-desc">Look at an example of some Sass code for a site's navigation:</p>
+                <a class="link" href="https://www.w3schools.com/sass/sass_nesting.php">Read More...</a>
+            </div>
+            <div class="player-box text-center-xs">
+                <h3 class="player-title">Sass @import and Partials</h3>
+                <p class="player-desc">Just like CSS, Sass also supports the @import directive.</p>
+                <p  class="player-desc">The @import directive allows you to include the content of one file in another.</p>
+                <p  class="player-desc">The CSS @import directive has a major drawback due to performance issues; it creates an extra HTTP request each time you call it. However, the Sass @import directive includes the file in the CSS; so no extra HTTP call is required at runtime!</p>
+                <a class="link" href="https://www.w3schools.com/sass/sass_import.php">Read More...</a>
+            </div>
+            <div class="player-box text-center-xs">
+                <h3 class="player-title">Sass @mixin and @include</h3>
+                <p class="player-desc">The @mixin directive lets you create CSS code that is to be reused throughout the website.</p>
+                <p  class="player-desc">The @include directive is created to let you use (include) the mixin.</p>
+                <a class="link" href="https://www.w3schools.com/sass/sass_mixin_include.php">Read More...</a>
+            </div>
+            <div class="player-box text-center-xs">
+                <h3 class="player-title">Sass @extend and Inheritance</h3>
+                <p class="player-desc">The @extend directive lets you share a set of CSS properties from one selector to another.</p>
+                <p  class="player-desc">The @extend directive is useful if you have almost identically styled elements that only differ in some small details.</p>
+                <p  class="player-desc">The following Sass example first creates a basic style for buttons (this style will be used for most buttons). Then, we create one style for a "Report" button and one style for a "Submit" button. Both "Report" and "Submit" button inherit all the CSS properties from the .button-basic class, through the @extend directive. In addition, they have their own colors defined:</p>
+                <a class="link" href="https://www.w3schools.com/sass/sass_extend.php">Read More...</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="codes" id="code">
+        <div class="container">
+            <div class="head-width-border">
+                <h2>Sass Code</h2>
+            </div>
+            <div class="photo-box">
+                <img src="imgs/Capture.PNG" class="photo-code" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="gallery text-center-xs">
+                <h3 class="section-title">Latest From Blog</h3>
+                <div class="img-box">
+                    <img src="imgs/images.png" alt="">
+                    <div class="text">
+                    <h4>LOREM TESTING TITLE</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam ea aliquid non rem eum ut fugit. Voluptatibus adipisci accusamu</p>
+                </div>
+                </div>
+                <div class="img-box">
+                    <img src="imgs/images (1).png" alt="">
+                    <div class="text">
+                    <h4>LOREM TESTING TITLE</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam ea aliquid non rem eum ut fugit. Voluptatibus adipisci accusamu</p>
+                </div>
+                </div>
+            </div>
+            <div class="info">
+                <h3 class="section-title">Company Details</h3>
+                <ul>
+                    <li>Company Details</li>
+                    <li>Company Details</li>
+                    <li>Company Details</li>
+                    <li>Company Details</li>
+                    <li>Company Details</li>
+                    <li>Company Details</li>
+                    <li>Company Details</li>
+                </ul>
+                <h4 class="working">WOrking Hours</h4>
+                <p>Monday - Friday 08:00 - 17:00</p>
+            </div>
+            <div class="contact">
+                <h3 class="section-title">Contact Us</h3>
+                <form action="">
+                    <input type="text" name="" placeholder="TEXT"> 
+                    <input type="email" name="" placeholder="EMAIL">
+                    <textarea placeholder="MESSAGE"></textarea>
+                    <input class="main-button" type="submit" value="submit">
+                </form>
+            </div>
+            <div class="clearfix"></div>
+            <div class="copyright">
+                <div class="text">ALL RIGHT Reservd &copy; 2022</div>
+                <div class="author">Designed by os template</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.the-toggler').click( function(){
+            $('.navbar').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
